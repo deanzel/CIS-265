@@ -9,4 +9,20 @@ package binaryprint;
 
 public class nPrint {
     
+    public String strBinary;
+    
+    public String intToBinary(int n) {
+        if (n < 2 && n > -1) {
+            strBinary = "" + n;
+            return strBinary;
+        }
+        else {
+            if (n != 0) {
+                //strBinary += ""+ n%2;
+                intToBinary(n/2);
+                strBinary += ""+ n%2;
+            }
+        return strBinary;
+        }
+    }
 }

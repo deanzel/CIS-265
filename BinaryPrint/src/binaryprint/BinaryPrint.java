@@ -13,7 +13,9 @@ public class BinaryPrint {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        nPrint run = new nPrint();
+        
+        System.out.println(run.intToBinary(27));
     }
     
 }
